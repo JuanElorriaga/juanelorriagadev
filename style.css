@@ -1,0 +1,349 @@
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root{
+    --white: #f9f9f9;
+    --black: #36383F;
+    --grey: #85888C;
+    --roxin: rgb(95, 6, 80);
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+    background-color: var(--black);
+    box-shadow: 1px 1px 5px 0px var(--grey);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Logo */
+.logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 5px;
+    width: 300px;
+    height: fit-content;
+
+}
+
+.artigo-imagem{
+    width: 35%;
+    height: 35%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 45%;
+}
+
+.artigo-imagem-menores{
+    width: 65%;
+    height: 65%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 18%;
+}
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    background-color: var(--roxin);
+    overflow: hidden;
+    
+}
+
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+
+}
+
+.menu a:hover{
+    background-color: var(--grey);
+}
+
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    
+}
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before{
+    top: 5px;
+}
+
+.hamb-line::after{
+    top: -5px;
+}
+
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+
+    }
+
+    .menu li{
+        float: left;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--grey);
+        
+    }
+    
+    .hamb{
+        display: none;
+    }
+    
+    .logo{
+        width: 45%;
+    }
+
+    .artigo-imagem{
+        width:300px;
+        align-items: center;
+    justify-content: center;
+    align-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+.artigo{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+}
+
+
+
+}
+
+
+
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--roxin);
+    color: var(--white);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.artigo{
+    margin-top: 5%;
+    margin-bottom: 1%;
+    display:  flex;
+    flex-direction: column;
+    width: 100%;
+    -webkit-box-shadow: 1px 5px 15px -1px #000000; 
+    box-shadow: 1px 5px 15px -1px #000000;
+    border-radius: 5px;
+    padding: 2px;
+    /*align-items: center;
+    /justify-content: left;
+    align-content: center;*/
+}
+
+body{
+    background-color: #131314;
+}
+
+h1,h2,h3,h4,h5,p{
+    padding: 4px;
+    text-align: justify;
+    margin: 3px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 9px;
+    color: #a662ff;
+}
+
+.artigo img{
+    align-items: center;
+}
+.endereco-rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+
+.nav{
+       height: fit-content;
+}
+
+p{
+    margin: 5%;
+    text-align: justify;
+}
+
+p1{
+    font-size: 465px;
+    text-align: justify;
+}
+
+.titulos{
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    text-align: justify;
+    margin-left: 30px;
+}
+
+.zap{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.meu-zap{
+	margin-top:16px;
+}
+
+.artigo-rodape{margin-top: 5%;
+margin-bottom: 1%;
+display:  flex;
+flex-direction: column;
+width: 100%;
+padding: 2px;
+}
+
+label{
+    color:#FFF;
+}
+
+input{
+    width: 350px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #131314;
+    color: #FFF;
+    border-style: dashed;
+}
+
+.formulario{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+a{
+    list-style: none;
+    color: #04b8ff;
+}
+
+.links a{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}

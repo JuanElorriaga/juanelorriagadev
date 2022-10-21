@@ -1,0 +1,87 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo do Meu Site -->
+    <title>Juan Elorriaga - Portifólio</title>
+    <!-- Link do arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Cabeçalho(topo) do site -->
+    <header class="header">
+        <!-- Logo -->
+        <img src="logojuann.png" class="logo"/>
+        <!-- ícone de Hamburguer -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu tipo hamburguer -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#sobre">Minha vida</a></li>
+                <li><a href="#produtos">Projetos</a> </li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Conteúdo principal -->
+    <main>
+        <article class="artigo" id="sobre">
+            <h1 class="titulos">
+               Sobre
+            </h1>
+        <img src="241783325_4199919060106460_8504516779130212646_n.jpg" class="artigo-imagem"></img>
+                <p class="p1">Sou um programador residente em Cravinhos - São Paulo - Brasil, nascido em 7 de Julho de 1995.
+                    Possuo conhecimentos em HTML, CSS, Javascript, PHP, SQL e Object Pascal (Delphi).
+                    Formado em Análise e Densenvolvimento de Sistemas Pela Estácio de Sá, amo lidar com programação, desenvolvimento e coisas relacionadas à T.I. Sempre me impressiono com o quanto o mundo pode mudar apenas com pequenos projetos.
+                </p>
+        </article>
+        <article class="artigo" id="produtos">
+            <h1>
+               Projetos
+            </h1>
+            <h3>Abaixo estão meus principais projetos e projetos em que estou trabalhando atualmente:</h3>
+            <h2>No Easy Way Out</h2>
+            <img src="135685621_108607724493810_2496314314343612774_n.jpg" alt="">
+            <p class="p1"> Trata-se do desenvolvimento de um game 2d o qual estou desenvolvendo para dispositivos móveis e computador, para aperfeiçoar meus conhecimentos e realizar meu sonho de um dia criar e publicar meu próprio game.
+                Utilizando Javascript, HTML e CSS, tem o Phaser em sua programação.
+            </p>
+            <img src="175617963_160411789313403_2520719541776726878_n.png" class="artigo-imagem-menores" alt="">
+            <p class="p1">A previsão para lançamento é para o primeiro semestre de 2023.</p>
+            <p class="p1">Através do <a href="https://www.facebook.com/noeasywayoutgame/">link</a> do facebook, será possível acompanhar atualizações do desenvolvimento do game.</p>
+            <h2>Reserva de Mesas Online  - Trabalho de Conclusão Etec 2016</h2>
+            <a href="https://github.com/JuanElorriaga/Reserva-de-Mesas---Trabalho-conclus-o-de-curso---Etec-2016" class="href">Link para o repositorio</a>
+        </article>
+        <article class="artigo" id="contato">
+            <h1>
+               Contato
+            </h1>
+            <form action="submit" method="post"class="formulario">
+                <p>
+                    Entre em contato comigo!
+                </p>
+                <label>Seu nome!</label><input type="text"/>
+                <label>Seu Seu email!</label><input type="email"/>
+                <label>Sua mensagem!</label><input type="text"/>
+                <button type="submit">Envie sua mensagem!</button>
+            </form>
+        </article>
+        
+    </main>
+    <!-- Rodapé do site -->
+    <footer class="rodape">
+        <div class="endereco-rodape">
+            <p class="artigo-rodape">Siga-me nas redes Sociais:</p>
+            <a href="https://api.whatsapp.com/send?phone=5516997207704&text=Olá, gostei de seu Portifólio, gostaria de saber mais sobre você!" class="zap" target="_blank">
+            <i class="fa fa-whatsapp meu-zap"></i></a>
+            <div class="links">
+            <a href="https://github.com/JuanElorriaga">GitHub</a>
+            <a href="https://cl.linkedin.com/in/juan-elorriaga-de-oliveira-9b1b1213a">Linkedin</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
