@@ -65,7 +65,7 @@
                 <label>Seu nome!</label><input type="text"/>
                 <label>Seu Seu email!</label><input type="email"/>
                 <label>Sua mensagem!</label><input type="text"/>
-                <button type="submit">Envie sua mensagem!</button>
+                <input type="button" value="Enviar e-mail" onclick="sendEmail()"/>
             </form>
         </article>
         
@@ -83,5 +83,7 @@
         </div>
 
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
