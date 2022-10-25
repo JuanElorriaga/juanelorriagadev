@@ -1,26 +1,13 @@
-var dataReload = document.querySelectorAll("a[data-reload]");
-var hi = document.getElementById("hi");
-var language = {
-  eng: {
-    welcome: "Welcome everyone!"
-  }
-};
-
-var setLanguage = () => {
-
-  if (window.location.hash === "#ita") {
-    hi.textContent = language.ita.welcome;
-  } else {
-    hi.textContent = language.eng.welcome;
-  }
-
+function sendEmail() {
+	Email.send({
+	Host: "smtp.mail.yahoo.com",
+	Username : "<juandevgithub@yahoo.com>",
+	Password : "<Senhapadrao2022>",
+	To : '<juandevgithub@yahoo.com>',
+	From : "<sender’s email address>",
+	Subject : "<Email de Contato>",
+	Body : "<email body>",
+	}).then(
+		message => alert("mail sent successfully")
+	);
 }
-
-for (i = 0; i < dataReload.length; i++) {
-  dataReload[i].onclick = function(e) {
-    window.location.hash = this.getAttribute("href");
-    setLanguage();
-  }
-}
-
-setLanguage()
