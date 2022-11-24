@@ -56,7 +56,6 @@ ul{
     align-content: center;
     margin-left: 40%;
     border-radius: 50%;
-    border: 1px solid rgb(100, 6, 64);
 }
 
 .artigo-imagem-menores{
@@ -202,7 +201,6 @@ ul{
     align-items: center;
     justify-content: center;
     align-content: center;
-    border: 1px solid rgb(100, 6, 64);
     border-radius: 50%;
     }
 }
