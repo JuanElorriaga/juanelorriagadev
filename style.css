@@ -54,10 +54,21 @@ ul{
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin-left: 45%;
+    margin-left: 40%;
+    border-radius: 50%;
+    border: 1px solid rgb(100, 6, 64);
 }
 
 .artigo-imagem-menores{
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 18%;
+}
+
+.artigo-imagem-game{
     width: 65%;
     height: 65%;
     align-items: center;
@@ -187,10 +198,12 @@ ul{
     }
 
     .artigo-imagem{
-        width:300px;
-        align-items: center;
+    width:300px;
+    align-items: center;
     justify-content: center;
     align-content: center;
+    border: 1px solid rgb(100, 6, 64);
+    border-radius: 50%;
     }
 }
 
